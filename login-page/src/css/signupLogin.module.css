@@ -1,0 +1,187 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.centerIt {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 38rem;
+  border: 1px solid black;
+  display: flex;
+}
+
+
+img {
+  height: 100%;
+  width: 230px;
+  object-fit: cover;
+}
+
+.contentBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.form {
+  width: 100%;
+}
+
+form {
+  padding: 1rem 1.9rem;
+  margin: 0 0.5rem;
+}
+
+
+#userInputFields {
+  display: flex;
+  margin-bottom: 1.2rem;
+  padding-bottom: 1rem;
+  justify-content: space-between;
+}
+
+#userInputFields label {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+#userInputFields input,
+#userInputFields select {
+  height: 41px;
+  width: 190px;
+  border-radius: 1rem;
+  padding-left: 8px;
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.9rem;
+  padding-right: 0.6rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.2rem;
+}
+
+.btn button {
+  padding: 0.4rem 2.8rem;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  background-color: #46A7A7;
+  color: white;
+  border: none;
+  opacity: 0.9;
+}
+
+.desc {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.desc a {
+  text-decoration: none;
+}
+
+.invalidFeedback {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+
+  img {
+    height: 100%;
+    width: 95px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .box {
+    width: 30rem;
+  }
+  #userInputFields label {
+    font-size: 1.5rem;
+    margin-left: 1px;
+  }
+
+  #userInputFields input,
+  #userInputFields select {
+    height: 30px;
+    width: 122px;
+    font-size: 1rem;
+    margin-right: 7px;
+  }
+
+
+  .desc {
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  form {
+    padding: 1.5rem 0;
+  }
+
+}
+
+@media (min-width: 375px) and (max-width: 600px) {
+  .box {
+    width: 28rem;
+  }
+  form{
+    padding: 1.5rem 0.9rem;
+  }
+  #userInputFields input,
+  #userInputFields select {
+    height: 35px;
+    width: 150px;
+    font-size: 1.2rem;
+    margin-right: 7px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1201px) {
+  html {
+    font-size: 18px;
+  }
+}
